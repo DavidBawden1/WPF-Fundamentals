@@ -2,3 +2,28 @@ WPF Notes.
 
 1. Xaml doesnt need wpf & wpf doesnt need xaml. 
 2. Anything that can be done in xaml can be done in code. 
+
+Events and commands 
+1.Bubbling starts from the child element and bubbles up to parent. 
+2.Tunnelling starts from the parent and tunnnels down to the children elements. 
+
+Controls
+1.Lookless control has no intrinsic look. 
+2.Use markups to display looks based on scenarios. 
+
+Framework element is the base of all controls. 
+
+Layout - Panel types
+1.Grid: enhanced table/grid-based layout.
+2.Canvas: Fixed layout; also supports anchoring.
+3.StackPanel: left to right or top to bottom.
+4.DockPanel: Similar to Windows forms docking.
+5.WrapPanel: flow-like formatting.
+
+Data Binding 
+1.Connects to objects or to xml. 
+2.Uses information from objects and displays that to the screen.  
+3.Data Templates superceeded winforms grids. 
+
+Designers
+1.Expression Blend

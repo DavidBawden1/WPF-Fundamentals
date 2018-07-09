@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Width="75" Height="24" Background="Green">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Rectangle Fill="{TemplateBinding Background}" RadiusX="5" RadiusY="5"/>
+                        <ContentPresenter RecognizesAccessKey="True" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalAlignment}" />
+                    </Grid>
+                </ControlTemplate>    
+            </Button.Template>
+            Click me
+        </Button>
     </Grid>
 </Window>
