@@ -1,0 +1,4 @@
+WPF Notes. 
+
+1. Xaml doesnt need wpf & wpf doesnt need xaml. 
+2. Anything that can be done in xaml can be done in code. 

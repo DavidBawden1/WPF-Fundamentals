@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/WPF Fundamentals/v15
+/.vs
+/Projects/BasicXAMLProject/Properties
+/Projects/BasicXAMLProject/obj/Debug
+/Projects/BasicXAMLProject/.vs/BasicXAMLProject/v15
