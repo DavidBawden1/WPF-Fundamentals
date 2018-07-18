@@ -27,3 +27,18 @@ Data Binding
 
 Designers
 1.Expression Blend
+
+Range controls
+1.Slider
+2.Progress bar 
+3.Scroll Bar
+
+ListView vs List Box. ListView provides column headers!
+
+Content Models           & Child Controls
+ContentControl           | Button, Label
+Headered Content Control | GroupBox, TabItem
+Items Control            | ListBox, ComboBox
+Headered Items Control   | MenuItem, TreeViewItem
+
+each item in these controls is wrapped inside an item container. i.e ListBoxItem, ListViewItem and so on so forth.

@@ -7,18 +7,64 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Width="75" Height="24" Background="Green">
-            <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <Grid>
-                        <Rectangle Fill="{TemplateBinding Background}" RadiusX="5" RadiusY="5"/>
-                        <ContentPresenter RecognizesAccessKey="True" Content="{TemplateBinding Content}"
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Width="75" Height="24" Background="Green" Grid.Column="0" Grid.Row="0">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Rectangle Fill="{TemplateBinding Background}" RadiusX="5" RadiusY="5"/>
+                            <ContentPresenter RecognizesAccessKey="True" Content="{TemplateBinding Content}"
                                           HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                           VerticalAlignment="{TemplateBinding VerticalAlignment}" />
-                    </Grid>
-                </ControlTemplate>    
-            </Button.Template>
-            Click me
-        </Button>
+
+                        </Grid>
+                    </ControlTemplate>
+
+                </Button.Template>
+                Click me
+            </Button>
+            <Label Target="{Binding Path=myTxtbox}" Grid.Column="1" Grid.Row="0">
+                _Name:
+            </Label>
+            <TextBox x:Name="myTxtbox" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="1" Width="100" Height="25" HorizontalAlignment="Right" SpellCheck.IsEnabled="True" TextAlignment="Left"/>
+            <TreeView Grid.Row="0" Grid.Column="3" Padding="8">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <TextBlock>Top Four Teams</TextBlock>
+                    </TreeViewItem.Header>
+                    <TreeViewItem Header ="Spurs"/>
+                    <TreeViewItem Header ="Liverpool"/>
+                    <TreeViewItem Header ="Chelsea"/>
+                    <TreeViewItem Header ="Man City"/>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <TextBlock Text="Bottom Four Teams">
+                        </TextBlock>
+                    </TreeViewItem.Header>
+                    <TreeViewItem Header ="Everton"/>
+                    <TreeViewItem Header ="Aresenal"/>
+                    <TreeViewItem Header ="Westham"/>
+                    <TreeViewItem Header ="Man united"/>
+                </TreeViewItem>
+               
+            </TreeView>
+
+
+        </Grid>
+
     </Grid>
 </Window>
