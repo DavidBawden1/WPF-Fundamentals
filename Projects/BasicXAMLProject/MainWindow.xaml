@@ -15,10 +15,11 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="100" MaxWidth="100"/>
+                <ColumnDefinition Width="100" MaxWidth="100"/>
+                <ColumnDefinition Width="100" MaxWidth="100"/>
+                <ColumnDefinition Width="100" MaxWidth="100"/>
+                <ColumnDefinition Width="100" MaxWidth="100"/>
             </Grid.ColumnDefinitions>
 
             <Button Width="75" Height="24" Background="Green" Grid.Column="0" Grid.Row="0">
@@ -60,11 +61,15 @@
                     <TreeViewItem Header ="Westham"/>
                     <TreeViewItem Header ="Man united"/>
                 </TreeViewItem>
-               
             </TreeView>
-
-
+            <Border Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="5" Margin="15" BorderBrush="Blue" BorderThickness="5" Padding="15" CornerRadius="12" x:Name="myBorder" Background="AliceBlue"  Width="400">
+                <StackPanel Orientation="Vertical" x:Name="myPanel" Background="Navy" Height="300" Width="300">
+                    <Ellipse x:Name="myEllipse" Margin="3" Fill="Green" Height="40"/>
+                    <Rectangle x:Name="myRectangle" Margin="3" Fill="Cyan" Height="40" RadiusX="10" RadiusY="10"/>
+                    <Button Content="Copy" Command="ApplicationCommands.Copy" Width="35"/>
+                    <Button Content="Paste" Command="ApplicationCommands.Paste" Width="35"/>
+                </StackPanel>
+            </Border>
         </Grid>
-
     </Grid>
 </Window>

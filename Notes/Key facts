@@ -3,10 +3,6 @@ WPF Notes.
 1. Xaml doesnt need wpf & wpf doesnt need xaml. 
 2. Anything that can be done in xaml can be done in code. 
 
-Events and commands 
-1.Bubbling starts from the child element and bubbles up to parent. 
-2.Tunnelling starts from the parent and tunnnels down to the children elements. 
-
 Controls
 1.Lookless control has no intrinsic look. 
 2.Use markups to display looks based on scenarios. 
@@ -42,3 +38,21 @@ Items Control            | ListBox, ComboBox
 Headered Items Control   | MenuItem, TreeViewItem
 
 each item in these controls is wrapped inside an item container. i.e ListBoxItem, ListViewItem and so on so forth.
+
+Events and commands 
+1.Bubbling starts from the child element and bubbles up to parent. 
+2.Tunnelling starts from the parent and tunnnels down to the children elements. 
+3.Direct events are raised at the target element.
+
+
+Routed Events
+1.The control the event is attached to becomes the sender. i.e. adding button click event handlers to a stack panel means the sender is the stack panel. 
+	1. use the routedEventHandler Source to get the correct type. i.e. The button click event.
+
+Command Class      & Example Commands
+ApplicationCommands| Print, Copy, Save
+ComponentCommands  | MoveDown, SelectToEnd, ScrollPageUp
+EditingCommands    | ToggleBold, Delete
+MediaCommands      | Pause, Play, IncreaseVolume
+NavigationCommands | BrowseBack, Refresh
+Headered Items Control   | MenuItem, TreeViewItem
