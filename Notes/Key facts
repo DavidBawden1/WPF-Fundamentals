@@ -55,4 +55,17 @@ ComponentCommands  | MoveDown, SelectToEnd, ScrollPageUp
 EditingCommands    | ToggleBold, Delete
 MediaCommands      | Pause, Play, IncreaseVolume
 NavigationCommands | BrowseBack, Refresh
-Headered Items Control   | MenuItem, TreeViewItem
+
+Layout process
+1.Measure 
+2.Arrange
+
+Measure
+1.Walk the UI Tree determine preferred sizes. Measures each control. Some controls require infinite space. 
+2.Constrained or Unconstrained. Controls that are finite or infinite.  
+3.Size to content. Elements return a finite amount of size they require. 
+
+Arrange
+1. rewalk the ui tree and assign required sizes and position
+2. if images ask for more space than available. The image maybe rescaled. 
+3. controls that require more space than available will be cropped. 
