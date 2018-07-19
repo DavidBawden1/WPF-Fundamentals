@@ -70,6 +70,6 @@ Arrange
 2. if images ask for more space than available. The image maybe rescaled. 
 3. controls that require more space than available will be cropped. 
 
-Margin
+Margin & Padding
 1. two values = horizontal, vertical
 1. 4 values = left, top, right, bottom 
