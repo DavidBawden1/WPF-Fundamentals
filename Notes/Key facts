@@ -73,3 +73,38 @@ Arrange
 Margin & Padding
 1. two values = horizontal, vertical
 1. 4 values = left, top, right, bottom 
+
+Alignment 
+1. Vertical 
+	1. Top 
+	2. Center 
+	3. Bottom 
+	4. Stretch
+
+2. Horizontal 
+	1. Left
+	2. Center 
+	3. Right
+	4. Stretch
+
+Grids support: 
+Column row & sizing
+	1. Automatic 
+	2. Fixed
+	3. Proportional
+
+Grid Splitters
+1. Add to Cell 
+	1. Set the orientation of the control 
+		1. Vertical
+		2. Horizontal
+Resize columns & Rows when dragged
+
+Panels
+1. Dock panel 
+2. Stack panel 
+3. Wrap panel - runs out of space on one lne and then uses the next line. 
+
+Canvas 
+1. Absolute positioning 
+2. Inflexible
