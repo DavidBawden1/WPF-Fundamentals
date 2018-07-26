@@ -108,3 +108,54 @@ Panels
 Canvas 
 1. Absolute positioning 
 2. Inflexible
+
+ScrollViewer 
+1. Provides unconstrained amounts of space to children. 
+
+ViewBox - Content control - Rescales the content when it doesnt fit.
+
+Navigation Window - Almost like a web Browser. 
+1. Contains pages. 
+2. Navigates between pages. 
+Requires the StartUpUri with a reference to a page. Similar to winforms starting form. 
+
+Graphics 
+1. Brush 
+	1. Solid colour brush 
+		1.paints shapes in a uniform shade
+	2. Linear Gradient Brush - self explanitory. 
+	3. Radial Gradient Brush - Circular gradient. 
+
+Shapes - These are Geometries, Geometries are abstract & part of the core api. 
+
+Geometries don't know about the visual tree & have no intrinsic appearance.They require: Path or Drawing i.e. <Path.Fill><Path.Data><PathGeometry> and pass in values in order to display the shape with an outline set by those values.
+
+Multi figure path Geometry. takes a collection of shapes and makes a more complex shape. 
+
+Segment types 
+1. LineSegment
+2. PolyLineSegment
+3. ArcSegment
+4. QuadraticBezierSegment
+5. PolyQuadraticBezierSegment
+6. BezierSegement
+7. PolyBezierSegment
+
+Simple Geometries 
+1. LineGeometry
+2. RectangleGeometry 
+3. EllipseGeometry
+
+Combined Geometries - forms new shapes from two shapes for different scenarios 
+1. Exclude
+2. Intersect
+3. Union
+4. Xor
+
+GeometryGroup - Useful when used with simple geometries. specifically for designing a shape that has a mixture of figures. 
+ 
+Drawings - Drawing.Background can be used to display geometry. This is more performant than Path due to less items in the visual tree. 
+Drawings are 1 element, like a bitmap. Don't expext to get much interaction from them. 
+
+Animation
+Uses triggers to start the animation. i.e. event trigger 
